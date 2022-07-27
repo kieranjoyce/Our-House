@@ -20,7 +20,6 @@ const Addchore = () => {
   const [choreDescription, setChoreDescription] = useState("");
   const [openDifficulty, setOpenDifficulty] = useState(false);
   const user = useContext(CurrentUserContext);
-  const userID = user.uid;
 
   const [difficultyValue, setDifficultyValue] = useState(false);
   const [day, setDay] = useState("");
@@ -53,6 +52,7 @@ const Addchore = () => {
   }, []);
   
   const addChore = () => {
+    const userID = user.uid;
     postChore(userID, {
       choreName,
       choreDescription,
@@ -128,8 +128,7 @@ const Addchore = () => {
               setItems={setDifficulty}
               style={styles.dropdown}
             />
-          </View>
-          <View style={styles.assignUser}>
+            <View style={styles.assignUser}>
             <Text style={styles.font}>Assign a housemate:</Text>
             <ScrollView horizontal style={styles.userContainer}>
               {assignUserOptions.map((user) => {
@@ -171,6 +170,7 @@ const Addchore = () => {
                 );
               })}
             </ScrollView>
+          </View>
           </View>
           <Pressable style={styles.button} onPress={addChore}>
             <Text style={styles.addText}>Add</Text>
