@@ -98,7 +98,6 @@ const Groups = () => {
                         return currentChores.map((currentChore) => {
                           if(currentChore === chore.chore_id) {
                             currentChore.votes++
-                            console.log(currentChore);
                           }
                           return currentChore
                         })

@@ -47,7 +47,6 @@ const Profile = ({ navigation }) => {
   useEffect(() => {
     if (user.badges_achieved) {
       const badge = user.badges_achieved;
-      console.log(badge);
 
       badge.forEach((b) => {
         getBadges(b).then((res) => {
@@ -58,7 +57,6 @@ const Profile = ({ navigation }) => {
       });
     }
   }, [user]);
-  console.log(userBadges);
 
 //this is the signout function that definately works in the settingsScreen and this should now work on the profile page. Worked for me!!
   const signOutUser = () => {

@@ -95,7 +95,6 @@ export const postChore = (
 	userId,
 	{ choreName, choreDescription, difficulty, day, month, clickedUser }
 ) => {
-  console.log(clickedUser)
 	return getUserDataById(userId).then(({ household_id }) => {
 		const currentYear = new Date().getFullYear();
 		const dueDate = new Date(currentYear, parseInt(month) - 1, parseInt(day));
