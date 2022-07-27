@@ -227,8 +227,7 @@ const styles = StyleSheet.create({
     margin: 8,
     alignItems: "center",
     fontSize: 20,
-    borderWidth: "thin",
-    borderStyle: "double",
+    borderWidth: 1,
     borderRadius: 6,
   },
   difficultyDropdown: {
