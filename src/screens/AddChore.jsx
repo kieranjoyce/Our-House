@@ -126,6 +126,7 @@ const Addchore = () => {
               setOpen={setOpenDifficulty}
               setValue={setDifficultyValue}
               setItems={setDifficulty}
+              listMode="SCROLLVIEW"
               style={styles.dropdown}
             />
             <View style={styles.assignUser}>
