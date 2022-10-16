@@ -21,11 +21,11 @@ To run the project locally, first download the source and install the dependenci
 1. Clone the repository
 
 ```
-git clone https://github.com/musaissa15/Project-split
+git clone https://github.com/kieranjoyce/Our-House.git
 ```
 
 and `cd` into the directory
-`cd project-split`.
+`cd Our-House`.
 
 2. Run `npm install` to install all dependencies.
 
