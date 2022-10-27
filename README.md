@@ -6,6 +6,9 @@ Our House is a social app which makes enjoyable the process of delegating chores
 
 The idea for Our House comes from our personal experiences and provides a solution to getting things done!
 
+### Link to app presentation: 
+https://northcoders.com/projects/july-2022/our-house
+
 ## Installation
 
 Follow the instructions below to configure and run your own instance of Our House.
